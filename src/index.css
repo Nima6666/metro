@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+
+#logo {
+    font-family: "Briem Hand", cursive;
+}
+
+.cusShadow {
+    box-shadow: 5px 5px 50px -35px black;
+}
+
+.styledText {
+    font-family: "Briem Hand", cursive;
+}
+
+.parallax-bg {
+    /* Set background image */
+    background-image: url('/bar.webp');
+    /* Set background size to cover the entire element */
+    background-size: cover;
+    /* Set background attachment to fixed for the parallax effect */
+    background-attachment: fixed;
+    /* Set initial background position */
+    background-position: center;
+    /* Set a fixed height for the parallax section */
+    height: 500px; /* Adjust as needed */
+  }
+
+  /* #images {
+    transform: perspective(50px, 1 ,1);
+    perspective: 1000px;
+    transform: rotateY(30deg);
+    transform-origin: center;
+    transition: 0.2s ease all;
+
+  }
+
+  #images > img {
+    transform: rotateY(45deg);
+    border: 1px solid black;
+  } */
+
+  .perspective-hover-container {
+    perspective: 1000px;
+  }
+  
+  .perspective-hover-item {
+    transition: transform 0.5s;
+  }
+  
+  .perspective-hover-item:hover {
+    transform: rotateY(20deg);
+  }
