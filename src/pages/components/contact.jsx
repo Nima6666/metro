@@ -51,12 +51,7 @@ export default function ContactComp() {
     <section className="bg-blue-50 dark:bg-slate-800 z-10" id="contact">
       {isPage && (
         <div className="h-[500px] relative overflow-hidden">
-          <img
-            src={contactImg}
-            alt=""
-            className="w-full z-0 transform -top-1/3 absolute"
-            ref={imageRef}
-          />
+          <img src={contactImg} alt="" className="w-full z-0 " ref={imageRef} />
           <h2 className="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl w-full h-full absolute flex items-center justify-center top-0 bg-[#0000006b] styledText">
             Get in Touch
           </h2>

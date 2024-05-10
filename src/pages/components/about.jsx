@@ -9,6 +9,8 @@ export default function About() {
 
   const imageRef = useRef();
 
+  const hoverImageRef = useRef();
+
   useEffect(() => {
     if (location.pathname === "/about") {
       setIsPage(true);
@@ -33,16 +35,45 @@ export default function About() {
 
   console.log(isPage);
 
+  function handleHover(e) {
+    // console.log(e.clientX, e.clientY);
+
+    const imageCoordinates = hoverImageRef.current.getBoundingClientRect();
+    // console.log(
+    //   "X: ",
+    //   e.clientX - imageCoordinates.left - imageCoordinates.width / 2
+    // );
+
+    const midX = imageCoordinates.width / 2;
+
+    const x = e.clientX - imageCoordinates.left - imageCoordinates.width / 2;
+
+    const midY = imageCoordinates.height / 2;
+
+    const y = e.clientY - imageCoordinates.top - imageCoordinates.height / 2;
+
+    const xPer = (x / midX) * 20;
+
+    const yPer = (y / midY) * 20;
+
+    // console.log(xPer, yPer);
+
+    hoverImageRef.current.setAttribute(
+      "style",
+      `transform: perspective(3000px) rotateX(${yPer}deg) rotateY(${xPer}deg)`
+    );
+
+    // console.log(
+    //   "Y: ",
+    //   e.clientY - imageCoordinates.top - imageCoordinates.height / 2
+    // );
+  }
+
   return (
     <div className="relative">
       {isPage && (
         <div className="h-[500px] relative overflow-hidden">
-          <img
-            src={viewImg}
-            alt=""
-            className="w-full z-0 transform -top-3/4 absolute"
-            ref={imageRef}
-          />
+          <img src={viewImg} alt="" className="w-full z-0 " ref={imageRef} />
           <h2 className="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl w-full h-full absolute flex items-center justify-center top-0 bg-[#0000006b] styledText">
             About Us
           </h2>
@@ -51,33 +82,17 @@ export default function About() {
       <div className="px-32 flex flex-wrap py-24 justify-center items-start">
         <div
           id="images"
-          className="relative flex-1 min-h-[50vh] flex justify-center items-center mr-3 border border-black w-[1000px]"
+          className="mr-4"
+          ref={hoverImageRef}
+          onMouseMoveCapture={(e) => handleHover(e)}
         >
-          <div className="perspective-hover-container">
-            <img
-              src={hotelInteriorImg}
-              alt=""
-              className="absolute w-[500px] top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/2 rounded-md perspective-hover-item"
-            />
-            <img
-              src={hotelInteriorImg1}
-              alt=""
-              className="absolute w-[500px] top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2 rounded-md perspective-hover-item"
-            />
-            <img
-              src={barImg}
-              alt=""
-              className="absolute w-[500px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 rounded-md perspective-hover-item"
-            />
-            <img
-              src={viewImg}
-              alt=""
-              className="absolute w-[500px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/4 rounded-md perspective-hover-item"
-            />
-          </div>
+          <img src={hotelInteriorImg} alt="" className="hoverImg" />
+          <img src={hotelInteriorImg1} alt="" className="hoverImg" />
+          <img src={barImg} alt="" className="hoverImg" />
+          <img src={viewImg} alt="" className="hoverImg" />
         </div>
 
-        <div className="flex-1 flex flex-col justify-around">
+        <div className="flex-1 flex flex-col justify-around p-2">
           {!isPage && (
             <h1 className="title-font md:text-lg sm:text-2xl lg:text-2xl text-xl mb-4 font-bold text-[#8c2455] ">
               About Us

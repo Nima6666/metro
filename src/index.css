@@ -22,41 +22,57 @@ html {
     font-family: "Briem Hand", cursive;
 }
 
-.parallax-bg {
-    /* Set background image */
-    background-image: url('/bar.webp');
-    /* Set background size to cover the entire element */
-    background-size: cover;
-    /* Set background attachment to fixed for the parallax effect */
-    background-attachment: fixed;
-    /* Set initial background position */
-    background-position: center;
-    /* Set a fixed height for the parallax section */
-    height: 500px; /* Adjust as needed */
-  }
+#images {
+  position: relative;
+  width: 700px; /* Set your image width */
+  height: 50vh; /* Set your image height */
+  perspective: 1500px; /* Set the perspective value as needed */
+  transition: all 0.3 s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  /* #images {
-    transform: perspective(50px, 1 ,1);
-    perspective: 1000px;
-    transform: rotateY(30deg);
-    transform-origin: center;
-    transition: 0.2s ease all;
+}
 
-  }
+.hoverImg {
+  box-shadow: 10px 10px 90px -25px white;
+}
 
-  #images > img {
-    transform: rotateY(45deg);
-    border: 1px solid black;
-  } */
+#images .hoverImg:nth-child(1) {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  transform: translateZ(0px);
+}
 
-  .perspective-hover-container {
-    perspective: 1000px;
-  }
-  
-  .perspective-hover-item {
-    transition: transform 0.5s;
-  }
-  
-  .perspective-hover-item:hover {
-    transform: rotateY(20deg);
-  }
+#images .hoverImg:nth-child(2) {
+  transform: translateZ(150px);
+  width: 90%;
+  height: auto;
+  top: calc(50% - 40%);
+  left: calc(50% - 45%);
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+}
+
+#images .hoverImg:nth-child(3) {
+  transform: translateZ(300px);
+  width: 80%;
+  height: auto;
+  top: calc(50% - 40%);
+  left: calc(50% - 40%);
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+}
+
+#images .hoverImg:nth-child(4) {
+  transform: translateZ(450px);
+  width: 60%;
+  height: auto;
+  top: calc(50% - 30%);
+  left: calc(50% - 30%);
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+}
+
+
+
