@@ -48,12 +48,12 @@ export default function Header() {
     >
       <div
         id="logo"
-        className="text-5xl font-bold flex justify-center items-center z-[101]"
+        className="text-3xl lg:text-5xl font-bold flex justify-center items-center z-[101]"
       >
         <div className="text-yellow-400 mr-2">METRO</div>
         <div className="flex flex-col">
-          <div className="text-lg">GUEST</div>
-          <div className="text-lg">HOUSE</div>
+          <div className="text-lg lg:text-xl">GUEST</div>
+          <div className="text-lg lg:text-xl">HOUSE</div>
         </div>
       </div>
       {ham ? (

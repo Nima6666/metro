@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HamMenu({ setOpen }) {
   return (
     <div
-      className="border border-black absolute top-0 left-0 w-[100vw] h-[100vh] bg-[#000000a7] z-[100] flex justify-center items-center flex-col"
+      className="border border-black absolute top-0 left-0 w-[100vw] h-[100vh] bg-[#000000c7] z-[100] flex justify-center items-center flex-col"
       onScroll={(e) => e.stopPropagation()}
     >
       <Link
