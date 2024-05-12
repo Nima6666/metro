@@ -25,7 +25,7 @@ html {
 #images {
   position: relative;
   width: 600px; /* Set your image width */
-  min-height: 50vh; /* Set your image height */
+  height: fit-content;/* Set your image height */
   perspective: 1500px; /* Set the perspective value as needed */
   transition: all 0.3 s ease-in-out;
   display: flex;
@@ -36,11 +36,15 @@ html {
 
 #images > img {
   box-shadow: 10px 10px 90px -45px white;
+  
+  border-radius: 15px;
+}
+
+.imageAb {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%; 
-  border-radius: 15px;
 }
 
 /* #images .hoverImg:nth-child(1) {

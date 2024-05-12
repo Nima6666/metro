@@ -123,20 +123,20 @@ export default function About() {
             src={hotelInteriorImg1}
             ref={image2Ref}
             alt=""
-            className="hoverImg"
+            className="hoverImg imageAb"
             style={{ transform: "translateZ(-200px)" }}
           />
           <img
             src={barImg}
             alt=""
-            className="hoverImg"
+            className="hoverImg imageAb"
             ref={image3Ref}
             style={{ transform: "translateZ(-300px)" }}
           />
           <img
             src={viewImg}
             alt=""
-            className="hoverImg"
+            className="hoverImg imageAb"
             ref={image4Ref}
             style={{ transform: "translateZ(-500px)" }}
           />
@@ -148,7 +148,7 @@ export default function About() {
               About Us
             </h1>
           )}
-          <p className="min-w-[400px]">
+          <p className="w-[90vw] lg:w-[50vw]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,
             delectus nulla explicabo dicta placeat, dolorum aperiam aut aliquam
             illo laudantium nemo fuga quos libero beatae quo quibusdam odio
