@@ -62,7 +62,7 @@ export default function Services() {
         })}
       </div>
       {isPage && (
-        <div className="px-36 mt-4">
+        <div className="p-2 md:p-4 lg:px-36 mt-4">
           <p>
             Enjoy a wide selection of delicious dishes and refreshing beverages,
             served with care and attention to quality. Our food and beverages
