@@ -105,7 +105,7 @@ export default function About() {
           </h2>
         </div>
       )}
-      <div className="px-2 md:px-4 lg:px-32 flex flex-wrap lg:mt-10 lg:mb-10 mb-2 mt-2 justify-center items-start">
+      <div className="px-2 md:px-4 lg:px-32 flex flex-col xl:flex-row lg:mt-10 lg:mb-10 mb-2 mt-2 justify-center items-start">
         <div
           id="images"
           className="mr-4"
@@ -142,35 +142,32 @@ export default function About() {
           />
         </div>
 
-        <div className="flex-1 flex flex-col justify-around p-2">
+        <div className="flex-1 flex flex-col justify-around p-2 ">
           {!isPage && (
             <h1 className="title-font md:text-lg sm:text-2xl lg:text-2xl text-xl mb-4 font-bold text-[#8c2455] ">
               About Us
             </h1>
           )}
-          <p className="w-[90vw] lg:w-[50vw]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            delectus nulla explicabo dicta placeat, dolorum aperiam aut aliquam
-            illo laudantium nemo fuga quos libero beatae quo quibusdam odio
-            nostrum sint dolor nobis accusamus dolores dolorem? Vitae
-            necessitatibus dolores laudantium aliquam consequuntur numquam aut
-            fugiat. Quam similique omnis id cupiditate rem? Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Dolorum aperiam unde eligendi
-            voluptas magnam natus repellat, possimus nesciunt nisi illum,
-            praesentium provident, dolore eaque ducimus mollitia tempora?
-            Asperiores doloremque ut commodi earum rerum modi reprehenderit
-            itaque sit quibusdam assumenda nostrum voluptatem nisi, rem aperiam,
-            repellat, dolores corporis. Labore, ducimus sint.
-          </p>{" "}
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            similique quis voluptates animi nisi officia blanditiis repellat
-            consectetur. Ab rerum aut perspiciatis. Ab, deserunt? Repellendus
-            facilis dolorem laboriosam nesciunt iure ipsam dolorum ducimus
-            magnam sed neque maiores eveniet, saepe rerum odit assumenda
-            corrupti, fugiat quis porro minima itaque deleniti doloribus.
-          </p>
+          Welcome to Metro Guest House Metro Guest House offers a warm and
+          inviting stay in the heart of the city. Located in a bustling area,
+          our guest house provides a peaceful retreat for travelers seeking
+          comfort and convenience. Whether you're here for business or leisure,
+          our friendly staff is dedicated to making your stay enjoyable and
+          memorable. Our Mission At Metro Guest House, our mission is to provide
+          exceptional hospitality and a home-away-from-home experience for our
+          guests. We strive to create a welcoming environment where every guest
+          feels valued and cared for. Our Accommodation Our guest house features
+          cozy and well-appointed rooms designed to meet the needs of modern
+          travelers. Each room is tastefully furnished and equipped with
+          amenities to ensure a comfortable stay. Whether you're traveling solo,
+          with family, or on a business trip, we have the perfect accommodation
+          for you. Explore the City Situated in a prime location, Metro Guest
+          House offers easy access to the city's main attractions, shopping
+          centers, and dining venues. Our staff is happy to provide
+          recommendations and assistance with arranging transportation and tours
+          to help you make the most of your stay. Book Your Stay Experience the
+          comfort and convenience of Metro Guest House. Book your stay with us
+          and enjoy a relaxing and memorable visit to our vibrant city.
         </div>
       </div>
     </div>
