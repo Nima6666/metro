@@ -48,7 +48,7 @@ export default function ContactComp() {
   console.log(isPage);
 
   return (
-    <section className="bg-blue-50 dark:bg-slate-800 z-10" id="contact">
+    <section className="bg-blue-50 z-10" id="contact">
       {isPage && (
         <div className="h-[500px] relative overflow-hidden">
           <img
@@ -70,7 +70,7 @@ export default function ContactComp() {
                 Get in Touch
               </h2>
             )}
-            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600">
               Have a question or want to learn more about our services? Send us
               a message and we'll get back to you as soon as possible.
             </p>
@@ -79,7 +79,7 @@ export default function ContactComp() {
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
             <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+              <p className="mt-3 mb-12 text-lg text-gray-600">
                 Our team is dedicated to providing you with the best service
                 possible. If you have any questions or concerns, feel free to
                 reach out to us.
@@ -104,15 +104,13 @@ export default function ContactComp() {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                       Our Address
                     </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
+                    <p className="text-gray-600">
                       1230 Maecenas Street Donec Road
                     </p>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      New York, EEUU
-                    </p>
+                    <p className="text-gray-600">New York, EEUU</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -135,15 +133,11 @@ export default function ContactComp() {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                       Contact
                     </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Mobile: +1 (123) 456-7890
-                    </p>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Mail: tailnext@gmail.com
-                    </p>
+                    <p className="text-gray-600">Mobile: +1 (123) 456-7890</p>
+                    <p className="text-gray-600">Mail: tailnext@gmail.com</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -165,13 +159,13 @@ export default function ContactComp() {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                       Working hours
                     </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
+                    <p className="text-gray-600">
                       Monday - Friday: 08:00 - 17:00
                     </p>
-                    <p className="text-gray-600 dark:text-slate-400">
+                    <p className="text-gray-600">
                       Saturday &amp; Sunday: 08:00 - 12:00
                     </p>
                   </div>
@@ -179,9 +173,7 @@ export default function ContactComp() {
               </ul>
             </div>
             <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-              <h2 className="mb-4 text-2xl font-bold dark:text-white">
-                Ready to Get Started?
-              </h2>
+              <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
               <form id="contactForm" onSubmit={submitHandler}>
                 <div className="mb-6">
                   <label
@@ -194,7 +186,7 @@ export default function ContactComp() {
                     type="text"
                     id="name"
                     placeholder="Your name"
-                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                     name="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -211,7 +203,7 @@ export default function ContactComp() {
                     type="email"
                     id="email"
                     placeholder="Your email address"
-                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -230,7 +222,7 @@ export default function ContactComp() {
                     cols="30"
                     rows="5"
                     placeholder="Write your message..."
-                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>

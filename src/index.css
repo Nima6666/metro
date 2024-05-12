@@ -27,7 +27,6 @@ html {
  flex: 1; /* Set your image width */
   height: fit-content;/* Set your image height */
   perspective: 1500px; /* Set the perspective value as needed */
-  transition: all 0.3 s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +35,7 @@ html {
 
 #images > img {
   box-shadow: 10px 10px 90px -45px white;
-  
+  transition: all 0.3 s ease-in-out;
   border-radius: 15px;
 }
 

@@ -108,7 +108,7 @@ export default function About() {
       <div className="px-2 md:px-4 lg:px-32 flex flex-col xl:flex-row lg:mt-10 lg:mb-10 mb-2 mt-2 justify-center items-start">
         <div
           id="images"
-          className="mr-4"
+          className="mr-4 transition-all duration-100"
           ref={hoverImageRef}
           onMouseMoveCapture={(e) => handleHover(e)}
         >
@@ -142,7 +142,7 @@ export default function About() {
           />
         </div>
 
-        <div className="flex-1 flex flex-col justify-around p-2 ">
+        <div className="flex-1 flex flex-col justify-around p-2 text-justify">
           {!isPage && (
             <h1 className="title-font md:text-lg sm:text-2xl lg:text-2xl text-xl mb-4 font-bold text-[#8c2455] ">
               About Us
