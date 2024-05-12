@@ -50,7 +50,7 @@ export default function Services() {
           return (
             <div
               key={index}
-              className="flex flex-col items-center m-6 p-5 mb-3 w-[450px] rounded-md cusShadow  text-yellow-500 transition-all duration-300 hover:text-green-500 hover:cursor-pointer hover:-translate-y-2"
+              className="flex flex-col items-center m-6 p-5 mb-3 w-[400px] lg:w-[500px] rounded-md cusShadow  text-yellow-500 transition-all duration-300 hover:text-green-500 hover:cursor-pointer hover:-translate-y-2"
             >
               <div className="">{data.elem}</div>
               <h2 className="text-xl font-semibold m-3 text-black styledText">
