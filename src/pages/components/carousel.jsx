@@ -48,13 +48,13 @@ const Carousel = () => {
               className="w-full h-full object-cover"
             />
             <div
-              className="absolute top-1/2 right-1/2 text-white w-full h-full p-20 translate-x-1/2 -translate-y-1/2 text-4xl font-semibold styledText flex justify-center items-center"
+              className="absolute top-1/2 right-1/2 text-white w-full h-full p-20 translate-x-1/2 -translate-y-1/2  text-2xl lg:text-4xl font-semibold styledText flex justify-center items-center"
               style={{
                 background:
                   "radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)",
               }}
             >
-              <p className="w-[60%] text-center">{items.text}</p>
+              <p className="w-full lg:w-[60%] text-center">{items.text}</p>
             </div>
           </div>
         );

@@ -34,13 +34,18 @@ export default function Services() {
     <>
       {isPage && (
         <div className="h-[500px] relative overflow-hidden">
-          <img src={contactImg} alt="" className="w-full z-0 " ref={imageRef} />
+          <img
+            src={contactImg}
+            alt=""
+            className="h-full w-full object-cover z-0 "
+            ref={imageRef}
+          />
           <h2 className="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl w-full h-full absolute flex items-center justify-center top-0 bg-[#0000006b] styledText">
             Our Services
           </h2>
         </div>
       )}
-      <div className="flex px-32 justify-center mt-6 flex-wrap  ">
+      <div className="flex px-0 justify-center mt-6 flex-wrap  ">
         {serviceData.map((data, index) => {
           return (
             <div
@@ -56,6 +61,29 @@ export default function Services() {
           );
         })}
       </div>
+      {isPage && (
+        <div className="px-36 mt-4">
+          <p>
+            Enjoy a wide selection of delicious dishes and refreshing beverages,
+            served with care and attention to quality. Our food and beverages
+            are sure to satisfy your taste buds and leave you feeling satisfied.
+          </p>
+          <p className="mt-2">
+            Relax in our comfortable rooms and experience top-notch service that
+            will make your stay truly enjoyable. Our accommodation is designed
+            to provide you with the comfort and convenience you deserve.
+          </p>
+          <p className="mt-2">
+            Experience exciting entertainment options that will keep you engaged
+            and entertained throughout your visit. From live performances to
+            interactive activities, there's something for everyone to enjoy.
+          </p>
+          <p className="mt-2">
+            Whether you're here for a meal, a stay, or just to have fun, we're
+            committed to providing you with the best experience possible.
+          </p>
+        </div>
+      )}
     </>
   );
 }

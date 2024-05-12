@@ -24,8 +24,8 @@ html {
 
 #images {
   position: relative;
-  width: 700px; /* Set your image width */
-  height: 50vh; /* Set your image height */
+  width: 600px; /* Set your image width */
+  min-height: 50vh; /* Set your image height */
   perspective: 1500px; /* Set the perspective value as needed */
   transition: all 0.3 s ease-in-out;
   display: flex;
@@ -34,11 +34,16 @@ html {
 
 }
 
-.hoverImg {
-  box-shadow: 10px 10px 90px -25px white;
+#images > img {
+  box-shadow: 10px 10px 90px -45px white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  border-radius: 15px;
 }
 
-#images .hoverImg:nth-child(1) {
+/* #images .hoverImg:nth-child(1) {
   width: 100%;
   transition: all 0.3s ease-in-out;
   transform: translateZ(0px);
@@ -72,7 +77,7 @@ html {
   left: calc(50% - 30%);
   transition: transform 0.3s ease-in-out;
   position: absolute;
-}
+} */
 
 
 

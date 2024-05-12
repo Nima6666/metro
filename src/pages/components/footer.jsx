@@ -2,7 +2,7 @@ import { GiFamilyHouse } from "react-icons/gi";
 
 export default function Footer() {
   return (
-    <div className="text-center py-4">
+    <div className="text-center py-8">
       <a
         href="#"
         className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 styledText"
