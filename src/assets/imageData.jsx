@@ -43,3 +43,38 @@ export const serviceData = [
     text: "Exciting entertainment options to keep you entertained throughout your visit.",
   },
 ];
+
+export const reviews = [
+  {
+    img: "https://lh3.googleusercontent.com/a-/ALV-UjVQvMRtfCjBi0YAfdrNF3Uaf6D94-4LkzQ_WX3Z3ogtnVzA-AAbHw=w60-h60-p-rp-mo-ba3-br100",
+    name: "Niraj Dhakal",
+    review: "Wonderful and Budget friendly.",
+  },
+  {
+    img: "https://lh3.googleusercontent.com/a-/ALV-UjXGN8x_83xiiifRjjIac7IPPT9He4Rm0VWhTjpS-J_09RXlVT6w=w60-h60-p-rp-mo-ba5-br100",
+    name: "Nawaraj Jaisi",
+    review:
+      "It's well manage guest house to stay here and cost of the room and food is minimum but services are much better. This guest house offer only vegetarian foods only.",
+  },
+  {
+    img: "https://lh3.googleusercontent.com/a-/ALV-UjVdV4FN4oOTzNlzIbNpd-5P5HNaBWJtTaG3EJb19sSfv2gaQIg=w60-h60-p-rp-mo-br100",
+    name: "Dr. Ram Krishna Acharya",
+    review: "Clean, affordable with good food and plenty of parking space !",
+  },
+  {
+    img: "https://lh3.googleusercontent.com/a-/ALV-UjVP9-Selyq5GZEbisBsTCSRB9ek3UnEKSOlCr3IQfoZtfVlgdeHsA=w60-h60-p-rp-mo-ba5-br100",
+    name: "Mala Kushya (Mk vlogs)",
+    review:
+      "Best place in biratnagar , good place under Budget safe and hygiene",
+  },
+  {
+    img: "https://lh3.googleusercontent.com/a/ACg8ocKMqOLAIzZTNoO-er8kXTdbDruWTDOJKFxabMvKru8_nFSZNw=w60-h60-p-rp-mo-br100",
+    name: "Surya Narayan Behera",
+    review: "I love forest as well as lonely environment.",
+  },
+  // {
+  //   img: "https://lh3.googleusercontent.com/a-/ALV-UjVQvMRtfCjBi0YAfdrNF3Uaf6D94-4LkzQ_WX3Z3ogtnVzA-AAbHw=w60-h60-p-rp-mo-ba3-br100",
+  //   name: "",
+  //   review: "Wonderful and Budget friendly.",
+  // },
+];

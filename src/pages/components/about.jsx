@@ -144,30 +144,38 @@ export default function About() {
 
         <div className="flex-1 flex flex-col justify-around p-2 text-justify">
           {!isPage && (
-            <h1 className="title-font md:text-lg sm:text-2xl lg:text-2xl text-xl mb-4 font-bold text-[#8c2455] ">
+            <h1 className="title-font md:text-lg sm:text-2xl lg:text-2xl text-2xl mb-4 font-bold text-[#8c2455] ">
               About Us
             </h1>
           )}
-          Welcome to Metro Guest House Metro Guest House offers a warm and
-          inviting stay in the heart of the city. Located in a bustling area,
-          our guest house provides a peaceful retreat for travelers seeking
-          comfort and convenience. Whether you're here for business or leisure,
-          our friendly staff is dedicated to making your stay enjoyable and
-          memorable. Our Mission At Metro Guest House, our mission is to provide
-          exceptional hospitality and a home-away-from-home experience for our
-          guests. We strive to create a welcoming environment where every guest
-          feels valued and cared for. Our Accommodation Our guest house features
-          cozy and well-appointed rooms designed to meet the needs of modern
-          travelers. Each room is tastefully furnished and equipped with
-          amenities to ensure a comfortable stay. Whether you're traveling solo,
-          with family, or on a business trip, we have the perfect accommodation
-          for you. Explore the City Situated in a prime location, Metro Guest
-          House offers easy access to the city's main attractions, shopping
-          centers, and dining venues. Our staff is happy to provide
-          recommendations and assistance with arranging transportation and tours
-          to help you make the most of your stay. Book Your Stay Experience the
-          comfort and convenience of Metro Guest House. Book your stay with us
-          and enjoy a relaxing and memorable visit to our vibrant city.
+          <p>
+            Welcome to Metro Guest House Metro Guest House offers a warm and
+            inviting stay in the heart of the city. Located in a bustling area,
+            our guest house provides a peaceful retreat for travelers seeking
+            comfort and convenience. Whether you're here for business or
+            leisure, our friendly staff is dedicated to making your stay
+            enjoyable and memorable.
+          </p>
+          <span className="font-semibold mt-2 text-lg ">Our Mission</span> At
+          Metro Guest House, our mission is to provide exceptional hospitality
+          and a home-away-from-home experience for our guests. We strive to
+          create a welcoming environment where every guest feels valued and
+          cared for.{" "}
+          <span className="font-semibold mt-2 text-lg">Our Accommodation</span>{" "}
+          Our guest house features cozy and well-appointed rooms designed to
+          meet the needs of modern travelers. Each room is tastefully furnished
+          and equipped with amenities to ensure a comfortable stay. Whether
+          you're traveling solo, with family, or on a business trip, we have the
+          perfect accommodation for you.{" "}
+          <p className="mt-2">
+            Explore the City Situated in a prime location, Metro Guest House
+            offers easy access to the city's main attractions, shopping centers,
+            and dining venues. Our staff is happy to provide recommendations and
+            assistance with arranging transportation and tours to help you make
+            the most of your stay. Book Your Stay Experience the comfort and
+            convenience of Metro Guest House. Book your stay with us and enjoy a
+            relaxing and memorable visit to our vibrant city.
+          </p>
         </div>
       </div>
     </div>

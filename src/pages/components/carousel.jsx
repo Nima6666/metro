@@ -21,7 +21,7 @@ const Carousel = () => {
   //   }
   // };
 
-  var settings = {
+  const settings = {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
