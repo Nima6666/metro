@@ -307,10 +307,8 @@ export default function ContactComp() {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                       Our Address
                     </h3>
-                    <p className="text-gray-600">
-                      1230 Maecenas Street Donec Road
-                    </p>
-                    <p className="text-gray-600">New York, EEUU</p>
+                    <p className="text-gray-600">Biratnagar, Nepal</p>
+                    <p className="text-gray-600">Biratnagar, Nepal</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -336,11 +334,13 @@ export default function ContactComp() {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">
                       Contact
                     </h3>
-                    <p className="text-gray-600">Mobile: +1 (123) 456-7890</p>
-                    <p className="text-gray-600">Mail: tailnext@gmail.com</p>
+                    <p className="text-gray-600">Mobile: +977 9898989898</p>
+                    <p className="text-gray-600">
+                      Mail: someone@metroguesthouse.com
+                    </p>
                   </div>
                 </li>
-                <li className="flex">
+                {/* <li className="flex">
                   <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +369,7 @@ export default function ContactComp() {
                       Saturday &amp; Sunday: 08:00 - 12:00
                     </p>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="h-fit max-w-6xl p-5 md:p-12" id="form">
