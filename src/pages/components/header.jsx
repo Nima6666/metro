@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 import HamMenu from "./hamMenu";
 
+import { PiSignInBold } from "react-icons/pi";
+
 export default function Header() {
   const header = useRef();
 
@@ -79,8 +81,9 @@ export default function Header() {
               Contact
             </Link>
           </nav>
-          <button className="border border-black p-3 rounded-md bg-green-700 text-xl font-semibold text-white shadow-md shadow-green-950 text-nowrap">
+          <button className="border border-black p-3 rounded-md bg-green-700 text-lg font-semibold text-white shadow-md shadow-green-950 text-nowrap flex justify-center items-center">
             SIGN IN
+            <PiSignInBold size={25} className="ml-2" />
           </button>
         </>
       )}

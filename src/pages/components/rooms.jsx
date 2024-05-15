@@ -25,7 +25,7 @@ export default function Rooms() {
               />
             </div>
             <div className="card-back cusShadow p-4 py-8 flex flex-col items-center justify-between bg-green-200">
-              <p className=" text-xl text-justify">
+              <p className=" text-xl text-left">
                 The standard rooms are small and comfortable. They are the most
                 reasonably priced rooms out of all the other room categories.
                 They all have an attached bathroom.
@@ -57,7 +57,7 @@ export default function Rooms() {
               />
             </div>
             <div className="card-back cusShadow p-4 py-8 flex flex-col items-center justify-between bg-green-200">
-              <p className=" text-xl text-justify">
+              <p className=" text-xl text-left">
                 The deluxe room at Metro Guest House offers a spacious and
                 comfortable accommodation with modern amenities. It is elegantly
                 furnished and designed to provide a luxurious stay experience.
@@ -89,7 +89,7 @@ export default function Rooms() {
               />
             </div>
             <div className="card-back cusShadow p-4 py-8 flex flex-col items-center justify-between bg-green-200">
-              <p className=" text-xl text-justify ">
+              <p className=" text-xl text-left ">
                 The premium room at Metro Guest House is a top-tier
                 accommodation option, offering a blend of luxury and comfort.
                 These rooms are typically larger than deluxe rooms and feature
