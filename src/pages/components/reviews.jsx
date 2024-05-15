@@ -25,7 +25,7 @@ export default function Reviews() {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -74,12 +74,14 @@ export default function Reviews() {
             return (
               <div
                 key={index}
-                className="flex justify-center items-center z-20"
+                className="flex justify-center items-center z-20 "
               >
                 <div className="w-[90%] h-full border border-black bg-slate-500 rounded-md text-white p-2 text-center min-h-[200px]">
                   <div className="flex justify-center items-center">
                     <img src={data.img} alt="" className="mr-4" />
-                    <h3 className="text-lg font-semibold">{data.name}</h3>
+                    <h3 className="text-lg font-semibold text-left">
+                      {data.name}
+                    </h3>
                   </div>
                   <p className="mt-3 p-4 text-center">{data.review}</p>
                 </div>

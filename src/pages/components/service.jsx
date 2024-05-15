@@ -2,11 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { serviceData } from "../../assets/imageData";
 
 import contactImg from "/interior1.webp";
+import Rooms from "./rooms";
 
 export default function Services() {
   const [isPage, setIsPage] = useState(false);
 
   const imageRef = useRef();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   useEffect(() => {
     if (location.pathname === "/services") {
@@ -84,6 +92,7 @@ export default function Services() {
           </p>
         </div>
       )}
+      {isPage && <Rooms />}
     </>
   );
 }

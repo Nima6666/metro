@@ -16,6 +16,13 @@ export default function About() {
   const hoverImageRef = useRef();
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+  useEffect(() => {
     if (location.pathname === "/about") {
       setIsPage(true);
     } else {
