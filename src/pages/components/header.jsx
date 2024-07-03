@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
+import logoImg from "/logo.png";
+
 import Hamburger from "hamburger-react";
 import HamMenu from "./hamMenu";
 
@@ -50,13 +52,9 @@ export default function Header() {
     >
       <div
         id="logo"
-        className="text-3xl lg:text-5xl font-bold flex justify-center items-center z-[101]"
+        className="text-3xl lg:text-5xl font-bold flex justify-center items-center z-[101] h-[80px]"
       >
-        <div className="text-yellow-400 mr-2">METRO</div>
-        <div className="flex flex-col">
-          <div className="text-lg lg:text-xl">GUEST</div>
-          <div className="text-lg lg:text-xl">HOUSE</div>
-        </div>
+        <img src={logoImg} alt="" className="w-full h-full" />
       </div>
       {ham ? (
         <>
@@ -81,10 +79,15 @@ export default function Header() {
               Contact
             </Link>
           </nav>
-          <button className="border border-black p-3 rounded-md bg-green-700 text-lg font-semibold text-white shadow-md shadow-green-950 text-nowrap flex justify-center items-center">
+          <a
+            href="https://manage.metroguesthouses.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-black p-3 rounded-md bg-green-700 text-lg font-semibold text-white shadow-md shadow-green-950 text-nowrap flex justify-center items-center"
+          >
             SIGN IN
             <PiSignInBold size={25} className="ml-2" />
-          </button>
+          </a>
         </>
       )}
     </header>
